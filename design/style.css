@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+#card_Container {
+  display: inline-flex;
+  width: 35em;
+  height: 30em;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.containerImg,
+.containerInfo {
+  width: 50%;
+  height: 100%;
+}
+
+.containerImg img {
+  width: 100%;
+  height: 100%;
+  float: left;
+  border-radius: 10px 0 0 10px;
+}
+
+.containerInfo {
+  padding: 1.5em;
+  display: flex;
+  float: right;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.containerInfo span {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8em;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #6c7289;
+}
+
+.containerInfo h1 {
+  font-size: 2em;
+  font-family: Fraunces, Arial, Helvetica, sans-serif;
+  line-height: 1em;
+  margin: 0.5em;
+  margin-left: 0;
+  color: hsl(212, 21%, 14%);
+}
+
+.containerInfo p {
+  font-size: 14px;
+  font-family: Fraunces, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  margin: 0.5em 0.5em 1em 0;
+  line-height: 1.5em;
+  color: #6c7289;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Fraunces, Arial, Helvetica, sans-serif;
+  margin-left: 0;
+}
+
+.discount_price {
+  font-size: 2em;
+  color: #3c8067;
+}
+
+.sale_price {
+  font-size: 0.9em;
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+.addCard {
+  height: 3.5em;
+  border: none;
+  border-radius: 10px;
+  background-color: #3c8067;
+  font-family: Fraunces, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.addCard:hover {
+  cursor: pointer;
+  background-color: #162e25;
+}
+
+.attribution {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+
+  #card_Container {
+    display: inline-block;
+    height: 30em;
+    width: 20em;
+  }
+
+  .containerImg {
+    width: 20em;
+    height: 10em;
+  }
+
+  .containerImg img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .containerInfo {
+    display: inline-block;
+    text-align: left;
+    width: 20em;
+    height: 20em;
+    padding: 10px;
+  }
+
+  .containerInfo span {
+    margin: 5px;
+  }
+
+  .containerInfo h1,
+  .containerInfo p,
+  .discount_price {
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  .prices {
+    justify-content: flex-start;
+  }
+
+  .addCard {
+    width: 100%;
+  }
+
+  .attribution {
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+}
